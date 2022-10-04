@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    a {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  .navigation {
+    display: flex;
+
+    a {
+      font-weight: 500;
+      padding: 0 20px;
+      overflow: hidden;
+
+      span {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s;
+
+        &:before {
+          position: absolute;
+          top: 100%;
+          content: attr(data-hover);
+          transform: translate3d(0, 0, 0);
+          color: #ffc200;
+        }
+
+        &:hover {
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+
+  .mode {
+    cursor: pointer;
+  }
+}

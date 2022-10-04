@@ -1,0 +1,136 @@
+.contact_with_me_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .wrapper {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .left {
+      padding: 3vh;
+      border-radius: 12px;
+      box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+      overflow: hidden;
+
+      .top {
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          border-radius: 12px;
+        }
+      }
+
+      .bottom {
+        padding: 2vh 0;
+        display: grid;
+      }
+    }
+
+    .right {
+      padding: 3vh;
+      border-radius: 12px;
+      box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+      overflow: hidden;
+
+      form {
+        display: grid;
+        row-gap: 20px;
+
+        input {
+          padding: 1vh;
+          border: 1px solid #ced4da;
+          transition: all 0.2s;
+          font-weight: 600;
+          outline: none;
+
+          &:hover {
+            border: 1px solid #ffc200;
+          }
+
+          &:focus {
+            border: 1px solid #ffc200;
+          }
+        }
+
+        textarea {
+          padding: 1vh 0 0 1vh;
+          border: 1px solid #ced4da;
+          transition: all 0.2s;
+          font-weight: 600;
+          outline: none;
+
+          &:hover {
+            border: 1px solid #ffc200;
+          }
+
+          &:focus {
+            border: 1px solid #ffc200;
+          }
+        }
+
+        button {
+          padding: 14px 30px;
+          line-height: normal;
+          background: #ffc200;
+          color: white;
+          font-weight: 600;
+          border-radius: 50px;
+          transition: all 0.2s;
+
+          &:hover {
+            background: #474559;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .contact_with_me_container {
+    .wrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      .left {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .contact_with_me_container {
+    .left {
+      display: block !important;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .contact_with_me_container {
+    h4 {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 14px;
+    }
+
+    textarea {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+}

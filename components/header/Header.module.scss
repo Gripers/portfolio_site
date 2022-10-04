@@ -1,0 +1,50 @@
+.header {
+  margin: 8rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  small {
+    font-weight: 600;
+  }
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+
+    button {
+      padding: 14px 30px;
+      line-height: normal;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+      }
+    }
+
+    .resume {
+      background: #eee;
+      color: #5b5b5b;
+
+      &:hover {
+        color: #ffc200;
+      }
+    }
+
+    .quote {
+      background: #474559;
+      color: white;
+
+      &:hover {
+        background: #ffc200;
+      }
+    }
+  }
+}
